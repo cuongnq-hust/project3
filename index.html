@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid" style="position: relative;">
+        <div style="position: absolute; text-align: center; top: 30px; left: 40%;">
+            <h1 style=" color: white; ">Nguyễn Văn A</h1>
+            <span style="color: white; ">Full Stack Developer</span>
+        </div>
+        <img src="./images/banner.jpg " alt=" " style="width: 100%; ">
+    </div>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="# "><i class="icon-user" style="color: blue; "></i>Thông tin </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="# "><i class="icon-doc-text-inv" style="color: blue; "></i>Lý lịch </a>
+                    </li>
+                    <li class="avatar">
+                        <a class="nav-link" href="# "><img style="width: 100px; border-radius: 50px;" src="./images/default-avatar.webp " alt=" "> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="# "><i class="icon-mail-alt " style="color: blue; "></i>Chứng chỉ </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="# "><i class="icon-doc-text-inv" style="color: blue; "></i>Lý lịch </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6" style="padding: 10px 60px; background-color: #0dcaf030;">
+                <h1>Mục tiêu nghề nghiệp</h1>
+                <p>
+                    Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã được trau dồi và không ngừng học hỏi để phát
+                    triển bản thân, cũng như hoàn thành tốt nhất công việc được giao.
+                </p>
+            </div>
+            <div class="col-md-6" style="padding: 10px 60px; background-color: #41464b52;">
+                <h1>Thông tin cá nhân</h1>
+                <div id="checkemail">
+                    <form name="test">
+                        <div class="mb-3 mt-3">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <input type="button" value="Submit" onclick="kiemtra()" id="">
+                    </form>
+                </div>
+                <div id="infomation" style="display: none; ">
+                    <p style="margin-top: 20px; "><span>Giới tính</span> : Nam</p>
+                    <p><span>Ngày sinh</span> : 19/05/2000</p>
+                    <p><span>Điện thoại</span> : (+84) 912398xxx</p>
+                    <p><span>Email</span> : sinhvien@funix.edu.vn</p>
+                    <p><span>Địa chỉ</span> : Số 10, đường 10, Hà Nội</p>
+                    <p><span>Website</span> : https://abc.tech</p>
+                    <div class="icon-web ">
+                        <a href=" "><img src="./images/twitter.svg " alt=" " style="width: 5%; "></a>
+                        <a href=" "><img src="./images/facebook.svg " alt=" " style="width: 5%; margin-left: 10px; "></a>
+                        <a href=" "><img src="./images/google.svg " alt=" " style="width: 5%; margin-left: 10px; "></a>
+                        <a href=" "><img src="./images/instagram.svg " alt=" " style="width: 5%; margin-left: 10px; "></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container ">
+        <div class="row ">
+            <div class="col-md-4 " style="border: 1px solid black; background-color: #00afff4d;margin-top: 20px; ">
+                <div>
+                    <i style="font-size: 40px; font-weight: bold; ">Kinh nghiệm</i>
+                    <img src="./images/box2-heart.svg " alt=" " style="width: 10%; margin-left: 30px; ">
+
+                </div>
+                <div class="btn btn-success top" onclick="myFunction()" id="myBtn">View more</div>
+                <span id="dots"></span>
+                <div id="more1">
+                    <div class="details-info ">
+                        <i class="fa-regular fa-circle-dot " style="color: blue; "></i><span>Full Stack Developer- Công ty Y</span>
+                        <div>
+
+                            <p>05/2022 - <span style="border: 1px solid #00afff; background-color: #00afff; border-radius: 25%; color: white; ">Hiện tại</span></p>
+                            <ul>
+                                <li>Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu</li>
+                                <li>Phân tích và thiết kế database, sử dụng hệ quản trị CSDL( MySQL, SQL Sever, NoSQL,..) và viết được các câu truy vấn</li>
+                                <li>Sử dụng ngôn ngữ sever-side(Python, Java) để xây dựng Web Service</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-info ">
+                        <i class="fa-regular fa-circle-dot " style="color: blue; "></i><span>Web Designer- Công ty X</span>
+                        <div>
+                            <p>06/2021 - 04/2022</p>
+                            <ul>
+                                <li>Thiết kế website trên yêu cầu khách hàng</li>
+                                <li>Sử dụng các công cụ Figma, Canva. PTS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 "></div>
+            <div class="col-md-3 " style="border: 1px solid black; background-color: #00afff4d;margin-top: 20px; ">
+                <div>
+                    <i style="font-size: 40px; font-weight: bold; ">Kỹ năng</i>
+                    <img src="./images/alarm-fill.svg " alt=" " style="width: 10%; margin-left: 30px; ">
+                </div>
+                <div class="btn btn-success top" onclick="myFunction2()" id="myBtn2">View more</div>
+                <span id="dots2"></span>
+                <div id="more2">
+                    <p>HTMS/CSS: Fundamental</p>
+                    <span class="have "></span>
+                    <span class="nothave "></span>
+                    <span class="nothave "></span>
+                    <p>Javascript: Intermediate</p>
+                    <span class="have "></span>
+                    <span class="have "></span>
+                    <span class="nothave "></span>
+                    <p>NodeJS: Intermediate</p>
+                    <span class="have "></span>
+                    <span class="have "></span>
+                    <span class="nothave "></span>
+                    <p>Boostrap 5: Fundamental</p>
+                    <span class="have "></span>
+                    <span class="nothave "></span>
+                    <span class="nothave "></span>
+                </div>
+            </div>
+            <div class="col-md-1 "></div>
+            <div class="col-md-3 " style="border: 1px solid black; background-color: #00afff4d;margin-top: 20px; ">
+                <div>
+                    <i style="font-size: 40px; font-weight: bold; ">Ngôn ngữ</i>
+                    <img src="./images/mic.svg " alt=" " style="width: 10%; margin-left: 30px; ">
+                </div>
+                <div class="btn btn-success top" onclick="myFunction3()" id="myBtn3">View more</div>
+                <span id="dots3"></span>
+                <div id="more3">
+                    <p>Tiến anh: IELTS 7.0</p>
+                    <span class="have "></span>
+                    <span class="nothave "></span>
+                    <span class="nothave "></span>
+                    <p>Tiếng Nhật: JLPT N3</p>
+                    <span class="have "></span>
+                    <span class="have "></span>
+                    <span class="nothave "></span>
+                </div>
+            </div>
+            <div class="col-md-4 " style="border: 1px solid black; background-color: #00afff4d;margin-top: 20px; ">
+                <div>
+                    <i style="font-size: 40px; font-weight: bold; ">Hoạt động</i>
+                    <img src="./images/box2-heart.svg " alt=" " style="width: 10%; margin-left: 30px; ">
+
+                </div>
+                <div class="btn btn-success top" onclick="myFunction4()" id="myBtn4">View more</div>
+                <span id="dots4"></span>
+                <div id="more4">
+                    <div class="details-info ">
+                        <i class="fa-regular fa-circle-dot " style="color: blue; "></i><span>
+                        FPT Edu Hackkathon 2019</span>
+                        <div>
+                            <p>03/2019 - 05/2019</p>
+                            <ul>
+                                <li>Giải 3 bảng A</li>
+                                <li>Đề tài: Trang web về phân loại rác thải</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-info ">
+                        <i class="fa-regular fa-circle-dot " style="color: blue; "></i><span>
+                        Câu lạc bộ Z</span>
+                        <div>
+                            <p>06/2016 - 06/2017</p>
+                            <ul>
+                                <li>Trưởng ban chuyên môn</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 "></div>
+            <div class="col-md-3 " style="border: 1px solid black; background-color: #00afff4d;margin-top: 20px; ">
+                <div>
+                    <i style="font-size: 40px; font-weight: bold; ">Học vấn</i>
+                    <img src="./images/pencil-fill.svg " alt=" " style="width: 10%; margin-left: 30px; ">
+
+                </div>
+                <div class="btn btn-success top" onclick="myFunction5()" id="myBtn5">View more</div>
+                <span id="dots5"></span>
+                <div id="more5">
+                    <div class="details-info ">
+                        <i class="fa-regular fa-circle-dot " style="color: blue; "></i><span>
+                        Funix</span>
+                        <div>
+                            <p>06/2021 - 05/2022</p>
+                            <ul>
+                                <li>Tốt nghiệp chứng chỉ doanh nghiệp gói fullstack</li>
+                                <li>GPA: 9/10</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details-info ">
+                        <i class="fa-regular fa-circle-dot " style="color: blue; "></i><span>
+                        Cử nhân- ĐH FPT</span>
+                        <div>
+                            <p>08/2016 - 07/2019</p>
+                            <ul>
+                                <li>Chuyên ngành kỹ thuật phần mềm</li>
+                                <li>3.2/4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 "></div>
+            <div class="col-md-3 " style="border: 1px solid black; background-color: #00afff4d;margin-top: 20px; ">
+                <div>
+                    <i style="font-size: 40px; font-weight: bold; ">Sở thích</i>
+                    <img src="./images/hourglass-split.svg " alt=" " style="width: 10%; margin-left: 30px; ">
+
+                </div>
+                <div class="btn btn-success top" onclick="myFunction6()" id="myBtn6">View more</div>
+                <span id="dots6"></span>
+                <div id="more6">
+                    <div class="row ">
+                        <div class="col-md-3 " style=" background-color: white; border-radius: 50%;text-align: center; ">
+                            <img src="./images/vinyl-fill.svg " alt=" ">
+                            <p>Âm nhạc</p>
+                        </div>
+                        <div class="col-md-3 " style=" background-color: white; border-radius: 50%;text-align: center; ">
+                            <img src="./images/controller.svg " alt=" ">
+                            <p>Chơi game</p>
+                        </div>
+                        <div class="col-md-3 " style=" background-color: white; border-radius: 50%;text-align: center; ">
+                            <img src="./images/symmetry-horizontal.svg " alt=" ">
+                            <p>Du lịch</p>
+                        </div>
+                        <div class="col-md-3 " style=" background-color: white; border-radius: 50%;text-align: center; ">
+                            <img src="./images/emoji-sunglasses.svg " alt=" ">
+                            <p>Nấu ăn</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid " style="background-color: #e9ecef; ">
+        <h1 class="section-title ">
+            Chứng chỉ - Giải thưởng
+        </h1>
+        <div class="row ">
+            <div class="col-md-6 ">
+                <div class="certificateitem " style="border-right: 1px solid #d6c08d; ">
+                    <img src="./images/Cert_DBI.png " alt=" " width="260px ">
+                    <div style="margin-left: 30px; ">
+                        <p>CHỨNG CHỈ LẬP TRÌNH WEB-FUNIX</p>
+                        <p>- Chứng chỉ chương trình CCDN</p>
+                        <p>- GPA: 8.6</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="certificateitem " style="border-right: 1px solid #d6c08d; ">
+                    <img src="./images/Cert_DBI.png " alt=" " width="260px ">
+                    <div style="margin-left: 30px; ">
+                        <p>CHỨNG CHỈ LẬP TRÌNH WEB-FUNIX</p>
+                        <p>- Chứng chỉ chương trình CCDN</p>
+                        <p>- GPA: 8.6</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="certificateitem " style="border-right: 1px solid #d6c08d; ">
+                    <img src="./images/Cert_DBI.png " alt=" " width="260px ">
+                    <div style="margin-left: 30px; ">
+                        <p>CHỨNG CHỈ LẬP TRÌNH WEB-FUNIX</p>
+                        <p>- Chứng chỉ chương trình CCDN</p>
+                        <p>- GPA: 8.6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <h1 class="section-title ">
+            Dự án
+        </h1>
+        <div class="row ">
+            <div class="col-md-4 ">
+                <a href="./digital-cv.html">
+                    <img src="./images/project_1.png " alt=" " width="100% ">
+                </a>
+                <div style="background-color: green; ">
+                    <p style="padding: 15px 10px; ">CV CÁ NHÂN</p>
+                </div>
+                <div style="background-color: yellow ">
+                    <span class=" infodev ">2021</span>
+                    <i class="icon-user-1 " style=" font-size: 20px; margin-top: 10px; "></i>
+                    <span style="margin-top: 10px; ">FUNiX</span>
+                    <i class="icon-lamp " style=" font-size: 20px; margin-top: 10px; margin-left: 20px; "></i>
+                    <span style="margin-top: 10px; ">Developer</span>
+                </div>
+                <div class="tablebot ">
+                    <div class="tablebotitem " style="border-bottom: 1px solid black; ">
+                        <span style="width: 20% ">Mô tả</span>
+                        <span style="width: 80% ">Trang web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp</span>
+                    </div>
+                    <div class="tablebotitem " style="border-bottom: 1px solid black; ">
+                        <span style="width: 20% ">Nhiệm vụ</span>
+                        <span style="width: 80% ">Phát triển code- Review Code- Tối ưu Code- Xử lý lỗi</span>
+                    </div>
+                    <div class="tablebotitem ">
+                        <span style="width: 20% ">Công nghệ</span>
+                        <span style="width: 80% ">HTML-CSS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <a href="./digital-cv2.html">
+                    <img src="./images/project_3.png " alt=" " width="100% ">
+                </a>
+                <div style="background-color: green; ">
+                    <p style="padding: 15px 10px; ">CV CÁ NHÂN</p>
+                </div>
+                <div style="background-color: yellow ">
+                    <span class=" infodev ">2021</span>
+                    <i class="icon-user-1 " style=" font-size: 20px; margin-top: 10px; "></i>
+                    <span style="margin-top: 10px; ">FUNiX</span>
+                    <i class="icon-lamp " style=" font-size: 20px; margin-top: 10px; margin-left: 20px; "></i>
+                    <span style="margin-top: 10px; ">Developer</span>
+                </div>
+                <div class="tablebot ">
+                    <div class="tablebotitem " style="border-bottom: 1px solid black; ">
+                        <span style="width: 20% ">Mô tả</span>
+                        <span style="width: 80% ">Trang web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp</span>
+                    </div>
+                    <div class="tablebotitem " style="border-bottom: 1px solid black; ">
+                        <span style="width: 20% ">Nhiệm vụ</span>
+                        <span style="width: 80% ">Phát triển code- Review Code- Tối ưu Code- Xử lý lỗi</span>
+                    </div>
+                    <div class="tablebotitem ">
+                        <span style="width: 20% ">Công nghệ</span>
+                        <span style="width: 80% ">HTML-CSS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <a href="./digital-cv.html">
+                    <img src="./images/project_2.png " alt=" " width="100% ">
+                </a>
+                <div style="background-color: green; ">
+                    <p style="padding: 15px 10px; ">CV CÁ NHÂN</p>
+                </div>
+                <div style="background-color: yellow ">
+                    <span class=" infodev ">2021</span>
+                    <i class="icon-user-1 " style=" font-size: 20px; margin-top: 10px; "></i>
+                    <span style="margin-top: 10px; ">FUNiX</span>
+                    <i class="icon-lamp " style=" font-size: 20px; margin-top: 10px; margin-left: 20px; "></i>
+                    <span style="margin-top: 10px; ">Developer</span>
+                </div>
+                <div class="tablebot ">
+                    <div class="tablebotitem " style="border-bottom: 1px solid black; ">
+                        <span style="width: 20% ">Mô tả</span>
+                        <span style="width: 80% ">Trang web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp</span>
+                    </div>
+                    <div class="tablebotitem " style="border-bottom: 1px solid black; ">
+                        <span style="width: 20% ">Nhiệm vụ</span>
+                        <span style="width: 80% ">Phát triển code- Review Code- Tối ưu Code- Xử lý lỗi</span>
+                    </div>
+                    <div class="tablebotitem ">
+                        <span style="width: 20% ">Công nghệ</span>
+                        <span style="width: 80% ">HTML-CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light ">
+        <div class="container-fluid ">
+            <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#collapsibleNavbar ">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+            <div class="collapse navbar-collapse justify-content-center " id="collapsibleNavbar ">
+                <ul class="navbar-nav ">
+                    <li class="nav-item " style="text-align: center; ">
+                        <img src="./images/facebook.svg " alt=" ">
+                        <a class="nav-link " href="# "><i class="icon-user " style="color: blue; "></i>FACEBOOKE </a>
+                    </li>
+                    <li class="nav-item " style="text-align: center; ">
+                        <img src="./images/instagram.svg " alt=" ">
+                        <a class="nav-link " href="# "><i class="icon-user " style="color: blue; "></i>LINKEDIN </a>
+                    </li>
+                    <li class="nav-item " style="text-align: center; ">
+                        <img src="./images/github.svg " alt=" ">
+                        <a class="nav-link " href="# "><i class="icon-user " style="color: blue; "></i>GITHUB </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script type="text/javascript ">
+        function kiemtra() {
+            var check = 1;
+            var email = document.forms["test"]["email"].value;
+            if (email == null || email == "") {
+                alert("Bạn chưa nhập form");
+                return false;
+            }
+            check = 2;
+            if (check == 2) {
+                const box = document.getElementById('infomation');
+                box.style.display = 'block';
+                const boxemail = document.getElementById('checkemail');
+                boxemail.style.display = 'none';
+            }
+            return true;
+        }
+    </script>
+    <script type="text/javascript">
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more1");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "View more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "View less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function myFunction2() {
+            var dots = document.getElementById("dots2");
+            var moreText = document.getElementById("more2");
+            var btnText = document.getElementById("myBtn2");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "View more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "View less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function myFunction3() {
+            var dots = document.getElementById("dots3");
+            var moreText = document.getElementById("more3");
+            var btnText = document.getElementById("myBtn3");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "View more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "View less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function myFunction4() {
+            var dots = document.getElementById("dots4");
+            var moreText = document.getElementById("more4");
+            var btnText = document.getElementById("myBtn4");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "View more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "View less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function myFunction5() {
+            var dots = document.getElementById("dots5");
+            var moreText = document.getElementById("more5");
+            var btnText = document.getElementById("myBtn5");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "View more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "View less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function myFunction6() {
+            var dots = document.getElementById("dots6");
+            var moreText = document.getElementById("more6");
+            var btnText = document.getElementById("myBtn6");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "View more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "View less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+
+</html>

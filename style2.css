@@ -1,0 +1,108 @@
+.goalsbox {
+    background-color: white;
+    margin-top: 10px;
+    padding-bottom: 80px;
+}
+
+.goalsbox h2 {
+    margin-left: 10px;
+    color: blue;
+}
+
+.line {
+    width: 95%;
+    height: 1px;
+    background-color: red;
+    margin-left: 10px;
+}
+
+.goalsitem {
+    margin-left: 30px;
+}
+
+.goalsitem p {
+    font-weight: bold;
+}
+
+.linewhite {
+    height: 1px;
+    background-color: while;
+}
+
+.scopesbox {
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 80px;
+}
+
+.scopesbox h2 {
+    margin-left: 10px;
+    color: blue;
+}
+
+.teambox {
+    background-color: white;
+    margin-top: 10px;
+    padding-bottom: 6px;
+}
+
+.teambox h2 {
+    margin-left: 10px;
+    color: blue;
+}
+
+.teamitem {
+    margin-left: 30px;
+}
+
+.teamitem p {
+    font-weight: bold;
+}
+
+.primarybox {
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 105px;
+}
+
+.primarybox h2 {
+    margin-left: 10px;
+    color: blue;
+}
+
+.primaryitem {
+    margin-left: 30px;
+}
+
+.timebox {
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 115px;
+}
+
+.timebox h2 {
+    margin-left: 10px;
+    color: blue;
+}
+
+.timeitem {
+    margin-left: 30px;
+}
+
+.linetime {
+    height: 1px;
+    background-color: red;
+}
+
+.timeitem p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.number {
+    background-color: red;
+    border-radius: 50%;
+}
